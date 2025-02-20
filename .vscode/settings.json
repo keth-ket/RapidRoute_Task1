@@ -1,7 +1,0 @@
-{
-    "files.associations": {
-        "*.css": "tailwindcss",
-        "*.pcss": "postcss",
-        "*.postcss": "postcss"
-    },
-}
