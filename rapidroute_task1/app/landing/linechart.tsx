@@ -18,23 +18,24 @@ import {
   ChartTooltipContent,
 } from "@/components/ui/chart"
 const chartData = [
-  { month: "January", desktop: 186 },
-  { month: "February", desktop: 305 },
-  { month: "March", desktop: 237 },
-  { month: "April", desktop: 73 },
-  { month: "May", desktop: 209 },
-  { month: "June", desktop: 214 },
+  { month: "January", call: 186 },
+  { month: "February", call: 305 },
+  { month: "March", call: 237 },
+  { month: "April", call: 73 },
+  { month: "May", call: 209 },
+  { month: "June", call: 214 },
 ]
 
 const chartConfig = {
-  desktop: {
-    label: "Desktop",
+  call: {
+    label: "Call",
     color: "hsl(var(--chart-1))",
   },
 } satisfies ChartConfig
 
 export function LineChartCalls() {
   return (
+    
     <Card>
       <CardHeader>
         <CardTitle>Number of Calls</CardTitle>
@@ -63,9 +64,9 @@ export function LineChartCalls() {
               content={<ChartTooltipContent hideLabel />}
             />
             <Line
-              dataKey="desktop"
+              dataKey="call"
               type="linear"
-              stroke="var(--color-desktop)"
+              stroke="var(--color-call)"
               strokeWidth={2}
               dot={false}
             />
